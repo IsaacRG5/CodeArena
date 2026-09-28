@@ -8,26 +8,26 @@ public class Reto {
     private Long id;
     private String titulo;
     private String descripcion;
-    private Categorias categoria;
+    private Categoria categoria;
     private Dificultad dificultad;
     private final LocalDateTime fechaCreacion;
     private LocalDateTime FechaLimite;
     private EstadoReto estado;
 
-    public Reto(String titulo, String descripcion, String categoria,
-                String dificultad, LocalDateTime fechaLimite) {
+    public Reto(String titulo, String descripcion, Categoria  categoria,
+                Dificultad dificultad, LocalDateTime fechaLimite) {
 
         this.id=null;
         this.titulo = requireNoVacio(titulo, "El titulo es obligatorio ");
         this.descripcion = descripcion;
-        this.categoria = requireNoVacio(categoria, "La categoria es obligatoria");
+        this.categoria = Objects.requireNonNull(categoria, "La categoria es obligatoria");
         this.dificultad = Objects.requireNonNull(dificultad, "La dificultad es obligatoria");
         this.fechaCreacion = LocalDateTime.now();
         this.FechaLimite = fechaLimite;
         this.estado = EstadoReto.ACTIVO;
     }
 
-    public Reto(Long id, String titulo, String descripcion , Categorias categoria, Dificultad dificultad
+    public Reto(Long id, String titulo, String descripcion , Categoria categoria, Dificultad dificultad,
     LocalDateTime fechaCreacion, LocalDateTime fechaLimite, EstadoReto estado){
         this.id = Objects.requireNonNull(id, "El id es obligatorio al reconstruir un reto");
         this.titulo = titulo;
@@ -57,8 +57,9 @@ public class Reto {
         return dificultad.getExperienciaOtorgada();
     }
 
+
     public boolean estaVencido() {
-        return LocalDateTime.now().isAfter(fechaLimite);
+        return LocalDateTime.now().isAfter(getFechaLimite());
     }
 
     public boolean estaActivo() {
@@ -102,7 +103,7 @@ public class Reto {
     }
 
     public LocalDateTime getFechaLimite() {
-        return fechaLimite;
+        return FechaLimite;
     }
 
     public EstadoReto getEstado() {
