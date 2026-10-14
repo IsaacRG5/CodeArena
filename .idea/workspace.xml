@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b0a876e7-7437-45af-bb66-d911ce2bf079" name="Changes" comment="." />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Dockerfile" />
+        <option value="Docker Compose" />
+        <option value="Record" />
+        <option value="Exception" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Backend" />
+    <option name="ROOT_SYNC" value="SYNC" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;IsaacRG5&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/IsaacRG5/CodeArena.git&quot;,
+    &quot;accountId&quot;: &quot;64c4c427-4487-4b45-ad80-88ded34a80e3&quot;
+  }
+}</component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0000028315040028" />
+      <entry key="MS500" value="1.0777871926223979" />
+      <entry key="S2" value="1.6918846149223046" />
+      <entry key="S5" value="2.5098399074077014" />
+      <entry key="S10" value="3.09276047721008" />
+      <entry key="S30" value="3.6514468336947017" />
+      <entry key="S60" value="3.862620803426718" />
+      <entry key="M2" value="4.472222491851312" />
+      <entry key="M5" value="8.502221677551152" />
+      <entry key="M10" value="17.69412405554978" />
+      <entry key="M15" value="26.77324942743149" />
+      <entry key="M30" value="50.986868073328104" />
+      <entry key="H1" value="87.70261859247759" />
+      <entry key="H2" value="143.0681144743871" />
+      <entry key="H4" value="250.36957896567606" />
+      <entry key="D1" value="904.2531003077862" />
+      <entry key="W1" value="1273.7708945762597" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="9.068190369880872E-239" />
+      <entry key="S2" value="3.092504032018907E-60" />
+      <entry key="S5" value="1.7038789396475506E-24" />
+      <entry key="S10" value="1.627185370519731E-12" />
+      <entry key="S30" value="1.992529736680658E-4" />
+      <entry key="S60" value="0.023301725122768013" />
+      <entry key="M2" value="0.26065042753812434" />
+      <entry key="M5" value="1.1390988610579122" />
+      <entry key="M10" value="2.6446744071309065" />
+      <entry key="M15" value="5.557293235606453" />
+      <entry key="M30" value="18.892792063382302" />
+      <entry key="H1" value="45.61661832613609" />
+      <entry key="H2" value="92.63393992731409" />
+      <entry key="H4" value="179.05280083916765" />
+      <entry key="D1" value="573.535793533988" />
+      <entry key="W1" value="773.0820795014515" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="1.5153388926838064E-5" />
+      <entry key="MS500" value="0.1105673036547284" />
+      <entry key="S2" value="0.9439355306567606" />
+      <entry key="S5" value="2.0673702227627095" />
+      <entry key="S10" value="2.83631751739196" />
+      <entry key="S30" value="3.556820477050139" />
+      <entry key="S60" value="3.835326657699579" />
+      <entry key="M2" value="4.697164037115652" />
+      <entry key="M5" value="9.611800083788005" />
+      <entry key="M10" value="20.315071012081702" />
+      <entry key="M15" value="32.30720925222943" />
+      <entry key="M30" value="69.85307149302479" />
+      <entry key="H1" value="133.29157842124886" />
+      <entry key="H2" value="235.67611153355534" />
+      <entry key="H4" value="429.39839238497746" />
+      <entry key="D1" value="1477.7760394525012" />
+      <entry key="W1" value="2046.8504793075147" />
+    </decayedShown>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3JnS6G1kvoOQHhCIGVNrtzg73T2" />
+  <component name="ProjectLevelVcsManager">
+    <OptionsSetting value="false" id="Update" />
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;Spring Boot.CodeArenaApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.SpringApplication.executor&quot;: &quot;Run&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/isaac/Documentos/Spring Boot/CodeArena&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.com.intellij.openapi.options.colors.pages.GeneralColorsPage&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+    <configuration name="CodeArenaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
+      <module name="CodeArena" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.codearena.CodeArenaApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.codearena.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.CodeArenaApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-a203e0a19954-intellij.indexing.shared.core-IU-262.10968.63" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.10968.63" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b0a876e7-7437-45af-bb66-d911ce2bf079" name="Changes" comment="" />
+      <created>1790295161419</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1790295161419</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/frontend/node_modules/piscina/test/fixtures/notify-then-sleep-or.js" />
+      </list>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="comenzamos un projecto de una api de sistema de gestion de retos para desarrolladores" />
+    <MESSAGE value="se realizo la creacion de usuario, se declaro los roles, el nivel de cada usuario y el estado del Usuario." />
+    <MESSAGE value="se creo la clase categoria que contiene el id y nombre de categoria ademas de que se valido que la categoria no se pueda crear si no tiene id ni nombre" />
+    <MESSAGE value="se creo la clase reto en lo cual tiene se pide lo que debe de llevar el reto, ademas de crear excepciones entre otros" />
+    <MESSAGE value="se creo clases como categoria, logros, logros obtenidos, ademas se hizo los enums de la dificultad , el estado de Participacion, entre otros" />
+    <option name="LAST_COMMIT_MESSAGE" value="se creo clases como categoria, logros, logros obtenidos, ademas se hizo los enums de la dificultad , el estado de Participacion, entre otros" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/codearena/Domain/model/Logro.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
