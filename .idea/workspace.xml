@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0a876e7-7437-45af-bb66-d911ce2bf079" name="Changes" comment="." />
+    <list default="true" id="b0a876e7-7437-45af-bb66-d911ce2bf079" name="Changes" comment="feat: agregar persistencia de Categoria&#10;&#10;- CategoriaJpaRepository con búsqueda y existencia por nombre&#10;- CategoriaRepositoryAdapter implementando CategoriaRepositoryPort&#10;- Traducción entre Categoria (dominio) y CategoriaEntity">
+      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/codearena/Infrastructure/adapter/out/persistence/CategoriaJpaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/codearena/Infrastructure/adapter/out/persistence/CategoriaRepositoryAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,7 +39,7 @@
         <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Backend" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="SYNC" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
@@ -214,7 +218,8 @@
     <MESSAGE value="se creo la clase categoria que contiene el id y nombre de categoria ademas de que se valido que la categoria no se pueda crear si no tiene id ni nombre" />
     <MESSAGE value="se creo la clase reto en lo cual tiene se pide lo que debe de llevar el reto, ademas de crear excepciones entre otros" />
     <MESSAGE value="se creo clases como categoria, logros, logros obtenidos, ademas se hizo los enums de la dificultad , el estado de Participacion, entre otros" />
-    <option name="LAST_COMMIT_MESSAGE" value="se creo clases como categoria, logros, logros obtenidos, ademas se hizo los enums de la dificultad , el estado de Participacion, entre otros" />
+    <MESSAGE value="feat: agregar persistencia de Categoria&#10;&#10;- CategoriaJpaRepository con búsqueda y existencia por nombre&#10;- CategoriaRepositoryAdapter implementando CategoriaRepositoryPort&#10;- Traducción entre Categoria (dominio) y CategoriaEntity" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: agregar persistencia de Categoria&#10;&#10;- CategoriaJpaRepository con búsqueda y existencia por nombre&#10;- CategoriaRepositoryAdapter implementando CategoriaRepositoryPort&#10;- Traducción entre Categoria (dominio) y CategoriaEntity" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
