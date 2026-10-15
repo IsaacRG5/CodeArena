@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b0a876e7-7437-45af-bb66-d911ce2bf079" name="Changes" comment="feat: agregar persistencia de Categoria&#10;&#10;- CategoriaJpaRepository con búsqueda y existencia por nombre&#10;- CategoriaRepositoryAdapter implementando CategoriaRepositoryPort&#10;- Traducción entre Categoria (dominio) y CategoriaEntity">
-      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/codearena/Infrastructure/adapter/out/persistence/CategoriaJpaRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/codearena/Infrastructure/adapter/out/persistence/CategoriaRepositoryAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/codearena/Infrastructure/adapter/out/persistence/RetoEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/codearena/Infrastructure/adapter/out/persistence/RetoJpaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/codearena/Infrastructure/adapter/out/persistence/RetoRepositoryAdapter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +54,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/IsaacRG5/CodeArena.git&quot;,
-    &quot;accountId&quot;: &quot;64c4c427-4487-4b45-ad80-88ded34a80e3&quot;
+    &quot;accountId&quot;: &quot;d0f9d5ec-ad84-48f7-8781-ae03371d9e2c&quot;
   }
 }</component>
   <component name="MavenImportPreferences">
@@ -62,63 +64,67 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0000028315040028" />
-      <entry key="MS500" value="1.0777871926223979" />
-      <entry key="S2" value="1.6918846149223046" />
-      <entry key="S5" value="2.5098399074077014" />
-      <entry key="S10" value="3.09276047721008" />
-      <entry key="S30" value="3.6514468336947017" />
-      <entry key="S60" value="3.862620803426718" />
-      <entry key="M2" value="4.472222491851312" />
-      <entry key="M5" value="8.502221677551152" />
-      <entry key="M10" value="17.69412405554978" />
-      <entry key="M15" value="26.77324942743149" />
-      <entry key="M30" value="50.986868073328104" />
-      <entry key="H1" value="87.70261859247759" />
-      <entry key="H2" value="143.0681144743871" />
-      <entry key="H4" value="250.36957896567606" />
-      <entry key="D1" value="904.2531003077862" />
-      <entry key="W1" value="1273.7708945762597" />
+      <entry key="MS100" value="1.036146608096016" />
+      <entry key="MS500" value="1.5548125581082786" />
+      <entry key="S2" value="2.433091952510197" />
+      <entry key="S5" value="3.3485907544108655" />
+      <entry key="S10" value="3.991761368679722" />
+      <entry key="S30" value="4.611258158051747" />
+      <entry key="S60" value="4.8413055381498316" />
+      <entry key="M2" value="5.4598657929943535" />
+      <entry key="M5" value="9.492817261290762" />
+      <entry key="M10" value="18.684335499401907" />
+      <entry key="M15" value="27.763374374229222" />
+      <entry key="M30" value="51.97746420039962" />
+      <entry key="H1" value="88.69453040875712" />
+      <entry key="H2" value="144.06151724905115" />
+      <entry key="H4" value="251.36380631822868" />
+      <entry key="D1" value="905.2496254550499" />
+      <entry key="W1" value="1274.7701953135097" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="9.068190369880872E-239" />
-      <entry key="S2" value="3.092504032018907E-60" />
-      <entry key="S5" value="1.7038789396475506E-24" />
-      <entry key="S10" value="1.627185370519731E-12" />
-      <entry key="S30" value="1.992529736680658E-4" />
-      <entry key="S60" value="0.023301725122768013" />
-      <entry key="M2" value="0.26065042753812434" />
-      <entry key="M5" value="1.1390988610579122" />
-      <entry key="M10" value="2.6446744071309065" />
-      <entry key="M15" value="5.557293235606453" />
-      <entry key="M30" value="18.892792063382302" />
-      <entry key="H1" value="45.61661832613609" />
-      <entry key="H2" value="92.63393992731409" />
-      <entry key="H4" value="179.05280083916765" />
-      <entry key="D1" value="573.535793533988" />
-      <entry key="W1" value="773.0820795014515" />
+      <entry key="MS500" value="4.668032735001261E-239" />
+      <entry key="S2" value="2.6194709747361546E-60" />
+      <entry key="S5" value="1.5944101902598296E-24" />
+      <entry key="S10" value="1.5740469936401918E-12" />
+      <entry key="S30" value="1.9705994895913488E-4" />
+      <entry key="S60" value="0.02317313821826" />
+      <entry key="M2" value="0.25993025343097864" />
+      <entry key="M5" value="1.13783888922262" />
+      <entry key="M10" value="2.6432113483298174" />
+      <entry key="M15" value="5.555243481933072" />
+      <entry key="M30" value="18.889307530549793" />
+      <entry key="H1" value="45.61241143248058" />
+      <entry key="H2" value="92.62966834676169" />
+      <entry key="H4" value="179.04867250737118" />
+      <entry key="D1" value="573.5335895576667" />
+      <entry key="W1" value="773.081655102132" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.5153388926838064E-5" />
-      <entry key="MS500" value="0.1105673036547284" />
-      <entry key="S2" value="0.9439355306567606" />
-      <entry key="S5" value="2.0673702227627095" />
-      <entry key="S10" value="2.83631751739196" />
-      <entry key="S30" value="3.556820477050139" />
-      <entry key="S60" value="3.835326657699579" />
-      <entry key="M2" value="4.697164037115652" />
-      <entry key="M5" value="9.611800083788005" />
-      <entry key="M10" value="20.315071012081702" />
-      <entry key="M15" value="32.30720925222943" />
-      <entry key="M30" value="69.85307149302479" />
-      <entry key="H1" value="133.29157842124886" />
-      <entry key="H2" value="235.67611153355534" />
-      <entry key="H4" value="429.39839238497746" />
-      <entry key="D1" value="1477.7760394525012" />
-      <entry key="W1" value="2046.8504793075147" />
+      <entry key="MS100" value="0.036147053489100155" />
+      <entry key="MS500" value="0.5716867772318791" />
+      <entry key="S2" value="1.6465888634555468" />
+      <entry key="S5" value="2.87030153766914" />
+      <entry key="S10" value="3.711036347979996" />
+      <entry key="S30" value="4.506667047887365" />
+      <entry key="S60" value="4.808643668181728" />
+      <entry key="M2" value="5.681422838981256" />
+      <entry key="M5" value="10.600062235841335" />
+      <entry key="M10" value="21.303279313959624" />
+      <entry key="M15" value="33.29492421136144" />
+      <entry key="M30" value="70.84000355404186" />
+      <entry key="H1" value="134.27919367178737" />
+      <entry key="H2" value="236.66519781147858" />
+      <entry key="H4" value="430.3884689022947" />
+      <entry key="D1" value="1478.7703568300526" />
+      <entry key="W1" value="2047.849355097844" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -137,6 +143,7 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
@@ -145,7 +152,7 @@
     &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/isaac/Documentos/Spring Boot/CodeArena&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Cohorte 5/Documents/Isaac/CodeArena&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -168,7 +175,7 @@
     </configuration>
     <configuration name="CodeArenaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
-      <module name="CodeArena" />
+      <module name="CodeArena.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.codearena.CodeArenaApplication" />
       <extension name="coverage">
         <pattern>
@@ -189,8 +196,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-30f59d01ecdd-a203e0a19954-intellij.indexing.shared.core-IU-262.10968.63" />
-        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.10968.63" />
+        <option value="bundled-jdk-30f59d01ecdd-34e2839f716b-intellij.indexing.shared.core-IU-262.9437.185" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.9437.185" />
       </set>
     </attachedChunks>
   </component>
