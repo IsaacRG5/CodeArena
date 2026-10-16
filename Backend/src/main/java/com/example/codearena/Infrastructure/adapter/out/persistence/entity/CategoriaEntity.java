@@ -1,4 +1,4 @@
-package com.example.codearena.Infrastructure.adapter.out.persistence;
+package com.example.codearena.Infrastructure.adapter.out.persistence.entity;
 
 
 import jakarta.persistence.*;

@@ -1,9 +1,11 @@
-package com.example.codearena.Infrastructure.adapter.out.persistence;
+package com.example.codearena.Infrastructure.adapter.out.persistence.adapter;
 
 import com.example.codearena.Domain.model.Usuario;
 import com.example.codearena.Domain.model.utils.PaginaSolicitud;
 import com.example.codearena.Domain.model.utils.ResultadoPaginado;
 import com.example.codearena.Domain.port.out.UsuarioRepositoryPort;
+import com.example.codearena.Infrastructure.adapter.out.persistence.repository.UsuarioJpaRepository;
+import com.example.codearena.Infrastructure.adapter.out.persistence.entity.UsuarioEntity;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
@@ -16,7 +18,7 @@ import java.util.Optional;
 @Component
 public class UsuarioRepositoryAdapter implements UsuarioRepositoryPort {
 
-    private final  UsuarioJpaRepository usuarioJpaRepository;
+    private final UsuarioJpaRepository usuarioJpaRepository;
 
     public UsuarioRepositoryAdapter(UsuarioJpaRepository JpaRepository) {
         this.usuarioJpaRepository = JpaRepository;

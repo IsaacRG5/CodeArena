@@ -1,5 +1,6 @@
-package com.example.codearena.Infrastructure.adapter.out.persistence;
+package com.example.codearena.Infrastructure.adapter.out.persistence.repository;
 
+import com.example.codearena.Infrastructure.adapter.out.persistence.entity.UsuarioEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

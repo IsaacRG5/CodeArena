@@ -1,7 +1,9 @@
-package com.example.codearena.Infrastructure.adapter.out.persistence;
+package com.example.codearena.Infrastructure.adapter.out.persistence.adapter;
 
 import com.example.codearena.Domain.model.Categoria;
 import com.example.codearena.Domain.port.out.CategoriaRepositoryPort;
+import com.example.codearena.Infrastructure.adapter.out.persistence.repository.CategoriaJpaRepository;
+import com.example.codearena.Infrastructure.adapter.out.persistence.entity.CategoriaEntity;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;

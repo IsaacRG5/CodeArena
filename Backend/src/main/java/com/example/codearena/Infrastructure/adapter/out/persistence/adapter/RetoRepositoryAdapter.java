@@ -1,9 +1,12 @@
-package com.example.codearena.Infrastructure.adapter.out.persistence;
+package com.example.codearena.Infrastructure.adapter.out.persistence.adapter;
 
 import com.example.codearena.Domain.model.*;
 import com.example.codearena.Domain.model.utils.PaginaSolicitud;
 import com.example.codearena.Domain.model.utils.ResultadoPaginado;
 import com.example.codearena.Domain.port.out.RetoRepositoryPort;
+import com.example.codearena.Infrastructure.adapter.out.persistence.repository.RetoJpaRepository;
+import com.example.codearena.Infrastructure.adapter.out.persistence.entity.CategoriaEntity;
+import com.example.codearena.Infrastructure.adapter.out.persistence.entity.RetoEntity;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 

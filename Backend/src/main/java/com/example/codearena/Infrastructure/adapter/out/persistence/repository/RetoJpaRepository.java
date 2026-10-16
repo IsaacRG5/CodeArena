@@ -1,7 +1,8 @@
-package com.example.codearena.Infrastructure.adapter.out.persistence;
+package com.example.codearena.Infrastructure.adapter.out.persistence.repository;
 
 import com.example.codearena.Domain.model.Dificultad;
 import com.example.codearena.Domain.model.EstadoReto;
+import com.example.codearena.Infrastructure.adapter.out.persistence.entity.RetoEntity;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;

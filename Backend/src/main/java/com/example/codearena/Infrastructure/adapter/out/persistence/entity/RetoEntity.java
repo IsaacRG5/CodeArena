@@ -1,8 +1,7 @@
-package com.example.codearena.Infrastructure.adapter.out.persistence;
+package com.example.codearena.Infrastructure.adapter.out.persistence.entity;
 
 import com.example.codearena.Domain.model.Dificultad;
 import com.example.codearena.Domain.model.EstadoReto;
-import com.example.codearena.Domain.model.EstadoUsuario;
 import jakarta.persistence.*;
 import lombok.*;
 
