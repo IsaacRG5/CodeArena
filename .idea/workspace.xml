@@ -4,20 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0a876e7-7437-45af-bb66-d911ce2bf079" name="Changes" comment="feat: agregar persistencia de Reto&quot; -m &quot;- RetoEntity con relación ManyToOne hacia CategoriaEntity&#10;- RetoJpaRepository: búsquedas por estado, dificultad, categoría y fecha límite&#10;- RetoRepositoryAdapter implementando RetoRepositoryPort completo">
-      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/codearena/Infrastructure/adapter/out/persistence/adapter/ParticipacionRepositoryAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/codearena/Infrastructure/adapter/out/persistence/entity/ParticipacionEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/codearena/Infrastructure/adapter/out/persistence/repository/ParticipacionJpaRepository.java" afterDir="false" />
+    <list default="true" id="b0a876e7-7437-45af-bb66-d911ce2bf079" name="Changes" comment="feat: agregar persistencia de Participacion&#10;&#10;- ParticipacionEntity con relaciones ManyToOne hacia UsuarioEntity y RetoEntity&#10;- ParticipacionJpaRepository: búsquedas por usuario, estado (In/igualdad) y conteo&#10;- ParticipacionRepositoryAdapter implementando ParticipacionRepositoryPort completo&#10;  (incluye toPageable/toResultadoPaginado como helpers reutilizables)&#10;- Reorganización de persistence/ en subpaquetes entity, repository y adapter">
+      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/codearena/Application/Service/RetoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/codearena/Domain/exception/CategoriaNoEncontradaException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/codearena/Domain/exception/ParticipacionActivaExistenteException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/codearena/Domain/exception/ParticipacionNoEncontradaException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/codearena/Domain/exception/RetoNoEncontradoException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/example/codearena/Infrastructure/adapter/out/persistence/CategoriaEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/codearena/Infrastructure/adapter/out/persistence/entity/CategoriaEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/example/codearena/Infrastructure/adapter/out/persistence/CategoriaJpaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/codearena/Infrastructure/adapter/out/persistence/repository/CategoriaJpaRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/example/codearena/Infrastructure/adapter/out/persistence/CategoriaRepositoryAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/codearena/Infrastructure/adapter/out/persistence/adapter/CategoriaRepositoryAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/example/codearena/Infrastructure/adapter/out/persistence/RetoEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/codearena/Infrastructure/adapter/out/persistence/entity/RetoEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/example/codearena/Infrastructure/adapter/out/persistence/RetoJpaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/codearena/Infrastructure/adapter/out/persistence/repository/RetoJpaRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/example/codearena/Infrastructure/adapter/out/persistence/RetoRepositoryAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/codearena/Infrastructure/adapter/out/persistence/adapter/RetoRepositoryAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/example/codearena/Infrastructure/adapter/out/persistence/UsuarioEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/codearena/Infrastructure/adapter/out/persistence/entity/UsuarioEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/example/codearena/Infrastructure/adapter/out/persistence/UsuarioJpaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/codearena/Infrastructure/adapter/out/persistence/repository/UsuarioJpaRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/example/codearena/Infrastructure/adapter/out/persistence/UsuarioRepositoryAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/codearena/Infrastructure/adapter/out/persistence/adapter/UsuarioRepositoryAdapter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,8 +24,8 @@
         <option value="Dockerfile" />
         <option value="Docker Compose" />
         <option value="Record" />
-        <option value="Exception" />
         <option value="Interface" />
+        <option value="Exception" />
         <option value="Class" />
       </list>
     </option>
@@ -235,7 +228,8 @@
     <MESSAGE value="se creo clases como categoria, logros, logros obtenidos, ademas se hizo los enums de la dificultad , el estado de Participacion, entre otros" />
     <MESSAGE value="feat: agregar persistencia de Categoria&#10;&#10;- CategoriaJpaRepository con búsqueda y existencia por nombre&#10;- CategoriaRepositoryAdapter implementando CategoriaRepositoryPort&#10;- Traducción entre Categoria (dominio) y CategoriaEntity" />
     <MESSAGE value="feat: agregar persistencia de Reto&quot; -m &quot;- RetoEntity con relación ManyToOne hacia CategoriaEntity&#10;- RetoJpaRepository: búsquedas por estado, dificultad, categoría y fecha límite&#10;- RetoRepositoryAdapter implementando RetoRepositoryPort completo" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: agregar persistencia de Reto&quot; -m &quot;- RetoEntity con relación ManyToOne hacia CategoriaEntity&#10;- RetoJpaRepository: búsquedas por estado, dificultad, categoría y fecha límite&#10;- RetoRepositoryAdapter implementando RetoRepositoryPort completo" />
+    <MESSAGE value="feat: agregar persistencia de Participacion&#10;&#10;- ParticipacionEntity con relaciones ManyToOne hacia UsuarioEntity y RetoEntity&#10;- ParticipacionJpaRepository: búsquedas por usuario, estado (In/igualdad) y conteo&#10;- ParticipacionRepositoryAdapter implementando ParticipacionRepositoryPort completo&#10;  (incluye toPageable/toResultadoPaginado como helpers reutilizables)&#10;- Reorganización de persistence/ en subpaquetes entity, repository y adapter" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: agregar persistencia de Participacion&#10;&#10;- ParticipacionEntity con relaciones ManyToOne hacia UsuarioEntity y RetoEntity&#10;- ParticipacionJpaRepository: búsquedas por usuario, estado (In/igualdad) y conteo&#10;- ParticipacionRepositoryAdapter implementando ParticipacionRepositoryPort completo&#10;  (incluye toPageable/toResultadoPaginado como helpers reutilizables)&#10;- Reorganización de persistence/ en subpaquetes entity, repository y adapter" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
