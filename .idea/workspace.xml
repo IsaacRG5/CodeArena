@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0a876e7-7437-45af-bb66-d911ce2bf079" name="Changes" comment="feat: agregar persistencia de Participacion&#10;&#10;- ParticipacionEntity con relaciones ManyToOne hacia UsuarioEntity y RetoEntity&#10;- ParticipacionJpaRepository: búsquedas por usuario, estado (In/igualdad) y conteo&#10;- ParticipacionRepositoryAdapter implementando ParticipacionRepositoryPort completo&#10;  (incluye toPageable/toResultadoPaginado como helpers reutilizables)&#10;- Reorganización de persistence/ en subpaquetes entity, repository y adapter">
+    <list default="true" id="b0a876e7-7437-45af-bb66-d911ce2bf079" name="Changes" comment="feat: agregar excepciones de dominio para Reto y Participacion&#10;&#10;- RetoNoEncontradoException&#10;- CategoriaNoEncontradaException&#10;- ParticipacionActivaExistenteException&#10;- ParticipacionNoEncontradaException (con sobrecarga por usuarioId + retoId)&#10;- UsuarioNoEncontradoException&#10;bash">
+      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/codearena/Application/Service/ParticipacionService.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/codearena/Application/Service/RetoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/codearena/Domain/exception/CategoriaNoEncontradaException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/codearena/Domain/exception/ParticipacionActivaExistenteException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/codearena/Domain/exception/ParticipacionNoEncontradaException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/codearena/Domain/exception/RetoNoEncontradoException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,8 +22,8 @@
         <option value="Docker Compose" />
         <option value="Record" />
         <option value="Interface" />
-        <option value="Exception" />
         <option value="Class" />
+        <option value="Exception" />
       </list>
     </option>
   </component>
@@ -229,7 +226,8 @@
     <MESSAGE value="feat: agregar persistencia de Categoria&#10;&#10;- CategoriaJpaRepository con búsqueda y existencia por nombre&#10;- CategoriaRepositoryAdapter implementando CategoriaRepositoryPort&#10;- Traducción entre Categoria (dominio) y CategoriaEntity" />
     <MESSAGE value="feat: agregar persistencia de Reto&quot; -m &quot;- RetoEntity con relación ManyToOne hacia CategoriaEntity&#10;- RetoJpaRepository: búsquedas por estado, dificultad, categoría y fecha límite&#10;- RetoRepositoryAdapter implementando RetoRepositoryPort completo" />
     <MESSAGE value="feat: agregar persistencia de Participacion&#10;&#10;- ParticipacionEntity con relaciones ManyToOne hacia UsuarioEntity y RetoEntity&#10;- ParticipacionJpaRepository: búsquedas por usuario, estado (In/igualdad) y conteo&#10;- ParticipacionRepositoryAdapter implementando ParticipacionRepositoryPort completo&#10;  (incluye toPageable/toResultadoPaginado como helpers reutilizables)&#10;- Reorganización de persistence/ en subpaquetes entity, repository y adapter" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: agregar persistencia de Participacion&#10;&#10;- ParticipacionEntity con relaciones ManyToOne hacia UsuarioEntity y RetoEntity&#10;- ParticipacionJpaRepository: búsquedas por usuario, estado (In/igualdad) y conteo&#10;- ParticipacionRepositoryAdapter implementando ParticipacionRepositoryPort completo&#10;  (incluye toPageable/toResultadoPaginado como helpers reutilizables)&#10;- Reorganización de persistence/ en subpaquetes entity, repository y adapter" />
+    <MESSAGE value="feat: agregar excepciones de dominio para Reto y Participacion&#10;&#10;- RetoNoEncontradoException&#10;- CategoriaNoEncontradaException&#10;- ParticipacionActivaExistenteException&#10;- ParticipacionNoEncontradaException (con sobrecarga por usuarioId + retoId)&#10;- UsuarioNoEncontradoException&#10;bash" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: agregar excepciones de dominio para Reto y Participacion&#10;&#10;- RetoNoEncontradoException&#10;- CategoriaNoEncontradaException&#10;- ParticipacionActivaExistenteException&#10;- ParticipacionNoEncontradaException (con sobrecarga por usuarioId + retoId)&#10;- UsuarioNoEncontradoException&#10;bash" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
