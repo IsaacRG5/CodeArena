@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0a876e7-7437-45af-bb66-d911ce2bf079" name="Changes" comment="feat: agregar excepciones de dominio para Reto y Participacion&#10;&#10;- RetoNoEncontradoException&#10;- CategoriaNoEncontradaException&#10;- ParticipacionActivaExistenteException&#10;- ParticipacionNoEncontradaException (con sobrecarga por usuarioId + retoId)&#10;- UsuarioNoEncontradoException&#10;bash">
-      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/codearena/Application/Service/ParticipacionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/codearena/Application/Service/RetoService.java" afterDir="false" />
+    <list default="true" id="b0a876e7-7437-45af-bb66-d911ce2bf079" name="Changes" comment="feat: agregar ParticipacionService&#10;&#10;- Implementa AceptarRetoUseCase, EnviarSolucionUseCase, AprobarSolucionUseCase y RechazarSolucionUseCase&#10;- aprobarSolucion otorga experiencia al usuario y recalcula su nivel automáticamente">
+      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/codearena/Infrastructure/adapter/in/web/ParticipacionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/codearena/Infrastructure/adapter/in/web/RetoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/codearena/Infrastructure/adapter/in/web/dto/CrearRetoRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/codearena/Infrastructure/adapter/in/web/dto/EnviarSolucionRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/example/codearena/Domain/exception/ParticipacionNoEncontradaException.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/codearena/Domain/exception/ParticipacionNoEncontradaException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/example/codearena/Infrastructure/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/codearena/Infrastructure/config/SecurityConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,10 +24,10 @@
         <option value="Enum" />
         <option value="Dockerfile" />
         <option value="Docker Compose" />
-        <option value="Record" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="Exception" />
+        <option value="Class" />
+        <option value="Record" />
       </list>
     </option>
   </component>
@@ -211,11 +215,6 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-    <option name="exactExcludedFiles">
-      <list>
-        <option value="$PROJECT_DIR$/frontend/node_modules/piscina/test/fixtures/notify-then-sleep-or.js" />
-      </list>
-    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="comenzamos un projecto de una api de sistema de gestion de retos para desarrolladores" />
@@ -227,7 +226,9 @@
     <MESSAGE value="feat: agregar persistencia de Reto&quot; -m &quot;- RetoEntity con relación ManyToOne hacia CategoriaEntity&#10;- RetoJpaRepository: búsquedas por estado, dificultad, categoría y fecha límite&#10;- RetoRepositoryAdapter implementando RetoRepositoryPort completo" />
     <MESSAGE value="feat: agregar persistencia de Participacion&#10;&#10;- ParticipacionEntity con relaciones ManyToOne hacia UsuarioEntity y RetoEntity&#10;- ParticipacionJpaRepository: búsquedas por usuario, estado (In/igualdad) y conteo&#10;- ParticipacionRepositoryAdapter implementando ParticipacionRepositoryPort completo&#10;  (incluye toPageable/toResultadoPaginado como helpers reutilizables)&#10;- Reorganización de persistence/ en subpaquetes entity, repository y adapter" />
     <MESSAGE value="feat: agregar excepciones de dominio para Reto y Participacion&#10;&#10;- RetoNoEncontradoException&#10;- CategoriaNoEncontradaException&#10;- ParticipacionActivaExistenteException&#10;- ParticipacionNoEncontradaException (con sobrecarga por usuarioId + retoId)&#10;- UsuarioNoEncontradoException&#10;bash" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: agregar excepciones de dominio para Reto y Participacion&#10;&#10;- RetoNoEncontradoException&#10;- CategoriaNoEncontradaException&#10;- ParticipacionActivaExistenteException&#10;- ParticipacionNoEncontradaException (con sobrecarga por usuarioId + retoId)&#10;- UsuarioNoEncontradoException&#10;bash" />
+    <MESSAGE value="feat: agregar RetoService&#10;&#10;- RetoService implementa CrearRetoUseCase&#10;- Valida que la categoría exista antes de crear el reto" />
+    <MESSAGE value="feat: agregar ParticipacionService&#10;&#10;- Implementa AceptarRetoUseCase, EnviarSolucionUseCase, AprobarSolucionUseCase y RechazarSolucionUseCase&#10;- aprobarSolucion otorga experiencia al usuario y recalcula su nivel automáticamente" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: agregar ParticipacionService&#10;&#10;- Implementa AceptarRetoUseCase, EnviarSolucionUseCase, AprobarSolucionUseCase y RechazarSolucionUseCase&#10;- aprobarSolucion otorga experiencia al usuario y recalcula su nivel automáticamente" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
