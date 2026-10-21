@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0a876e7-7437-45af-bb66-d911ce2bf079" name="Changes" comment="feat: agregar ParticipacionService&#10;&#10;- Implementa AceptarRetoUseCase, EnviarSolucionUseCase, AprobarSolucionUseCase y RechazarSolucionUseCase&#10;- aprobarSolucion otorga experiencia al usuario y recalcula su nivel automáticamente">
-      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/codearena/Infrastructure/adapter/in/web/ParticipacionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/codearena/Infrastructure/adapter/in/web/RetoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/codearena/Infrastructure/adapter/in/web/dto/CrearRetoRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/codearena/Infrastructure/adapter/in/web/dto/EnviarSolucionRequest.java" afterDir="false" />
+    <list default="true" id="b0a876e7-7437-45af-bb66-d911ce2bf079" name="Changes" comment="feat: agregar controladores de Reto y Participacion&#10;&#10;- RetoController: crear reto, con validación @Future en la fecha límite&#10;- ParticipacionController: aceptar reto, enviar solución, aprobar y rechazar&#10;- El usuario se obtiene del JWT (Authentication), nunca del cuerpo de la petición&#10;- Aprobar/rechazar restringido a ADMIN con @PreAuthorize&#10;- Habilitar @EnableMethodSecurity en SecurityConfig">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/example/codearena/Domain/exception/ParticipacionNoEncontradaException.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/codearena/Domain/exception/ParticipacionNoEncontradaException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/example/codearena/Infrastructure/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/codearena/Infrastructure/config/SecurityConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -228,7 +222,8 @@
     <MESSAGE value="feat: agregar excepciones de dominio para Reto y Participacion&#10;&#10;- RetoNoEncontradoException&#10;- CategoriaNoEncontradaException&#10;- ParticipacionActivaExistenteException&#10;- ParticipacionNoEncontradaException (con sobrecarga por usuarioId + retoId)&#10;- UsuarioNoEncontradoException&#10;bash" />
     <MESSAGE value="feat: agregar RetoService&#10;&#10;- RetoService implementa CrearRetoUseCase&#10;- Valida que la categoría exista antes de crear el reto" />
     <MESSAGE value="feat: agregar ParticipacionService&#10;&#10;- Implementa AceptarRetoUseCase, EnviarSolucionUseCase, AprobarSolucionUseCase y RechazarSolucionUseCase&#10;- aprobarSolucion otorga experiencia al usuario y recalcula su nivel automáticamente" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: agregar ParticipacionService&#10;&#10;- Implementa AceptarRetoUseCase, EnviarSolucionUseCase, AprobarSolucionUseCase y RechazarSolucionUseCase&#10;- aprobarSolucion otorga experiencia al usuario y recalcula su nivel automáticamente" />
+    <MESSAGE value="feat: agregar controladores de Reto y Participacion&#10;&#10;- RetoController: crear reto, con validación @Future en la fecha límite&#10;- ParticipacionController: aceptar reto, enviar solución, aprobar y rechazar&#10;- El usuario se obtiene del JWT (Authentication), nunca del cuerpo de la petición&#10;- Aprobar/rechazar restringido a ADMIN con @PreAuthorize&#10;- Habilitar @EnableMethodSecurity en SecurityConfig" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: agregar controladores de Reto y Participacion&#10;&#10;- RetoController: crear reto, con validación @Future en la fecha límite&#10;- ParticipacionController: aceptar reto, enviar solución, aprobar y rechazar&#10;- El usuario se obtiene del JWT (Authentication), nunca del cuerpo de la petición&#10;- Aprobar/rechazar restringido a ADMIN con @PreAuthorize&#10;- Habilitar @EnableMethodSecurity en SecurityConfig" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
